@@ -11,8 +11,8 @@ function dieWith($err){die(json_encode(array('code'=>$err)));}
 function updateRedisString($redis,$key,$ttl,$value,&$old)
 {
  $old = $redis->get($key);
-	$done = (0 < $ttl)?$redis->psetex($key,$ttl,$value):$redis->set($key,$value);
-	return done;
+ $done = (0 < $ttl)?$redis->psetex($key,$ttl,$value):$redis->set($key,$value);
+ return $done;
 }	
 
 function updateRedisSet($redis,$key,$ttl,$sets,&$old)
