@@ -20,6 +20,7 @@ Comments & suggestions:contact@jreply.com
 Licensed MIT:http://choosealicense.com/licenses/mit/
 -->
 <head>
+<title>Redis Web Admin GUI</title>
 <link rel="shortcut icon" href='https://jresponse.r.worldssl.net/ide/nimages/redis.png'/>
 <link rel="stylesheet" href="https://jresponse.r.worldssl.net/styles/darkness.css" />
 <link rel='stylesheet' href='readmin.css'/>
