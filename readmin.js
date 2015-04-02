@@ -112,6 +112,7 @@ function doFilter()
  var ktype = showType(),
 	    filter = $('#inpFilter').val();
 	filter = (0 === filter.length)?'*':filter;
+ filter = encodeURIComponent(filter);
  
  var url = "find.php?ktype={kt}&filter={fl}".format({kt:ktype,fl:filter});
  $.get(url,afterFilter);
@@ -725,6 +726,8 @@ function doDelete()
 	    key = $('#selHits option:selected').data('h'),
 	    filter = $('#inpFilter').val();
 	filter = (0 === filter.length)?'*':filter;
+	filter = encodeURIComponent(filter);
+	
  var url = "delete.php?ktype={kt}&filter={fl}&key={ky}".format({kt:ktype,fl:filter,ky:key});
 	$.get(url,afterDelete);
 }
