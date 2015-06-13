@@ -1,4 +1,4 @@
-<?php
+--<?php
 if (!class_exists('Redis')) die('Please install php-redis, restart your webserver & try again');
 if (false === strpos($_SERVER['HTTP_USER_AGENT'],'Chrome')) 
 die('This application only works in Chrome and Opera');
@@ -21,8 +21,8 @@ Licensed MIT:http://choosealicense.com/licenses/mit/
 -->
 <head>
 <title>Redis Web Admin GUI</title>
-<link rel="shortcut icon" href='https://jresponse.r.worldssl.net/ide/nimages/redis.png'/>
-<link rel="stylesheet" href="https://jresponse.r.worldssl.net/styles/darkness.css" />
+<link rel="shortcut icon" href='https://1928868936.rsc.cdn77.org/ide/nimages/redis.png'/>
+<link rel="stylesheet" href="https://1928868936.rsc.cdn77.org/styles/darkness.css" />
 <link rel='stylesheet' href='readmin.css'/>
 <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
